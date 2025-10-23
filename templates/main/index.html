@@ -1,0 +1,460 @@
+{% load static %}
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Nutrabalance</title>
+  <link rel="stylesheet" href="{% static 'css/css/bootstrap.min.css' %}">
+    <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+  <script src="{% static 'js/js/bootstrap.bundle.min.js' %}" defer></script>
+  <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+    <header class="container-fluid sticky-top">
+        <nav class="navbar navbar-expand-lg">
+            <div class="logo container-fluid">
+                <a href="/index" class="navbar-brand">
+                    <img src="{% static 'assets/logo.webp' %}" style="width: 60px;"  alt="">
+                    <h3 class="ms-2">NUTRABALANCE</h3>
+                </a>
+                <button class="navbar-toggler" data-bs-target="#menu" data-bs-toggle="collapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="menu">
+                    <ul class="navbar-nav ms-3">
+                        <li class="nav-item">
+                            <a href="/index" class="nav-link"><b>Home</b></a>
+                        </li>
+                        <li class="nav-item ">
+                            <a href="/about" class="nav-link"><b>About</b></a>
+                        </li>
+                        <li class="nav-item ">
+                            <a href="/products" class="nav-link"><b>Products</b></a>
+                        </li>
+                        <li class="nav-item dropdown custom-nav-item custom-dropdown ">
+                            <a class="nav-link dropdown-toggle custom-nav-link custom-dropdown-toggle" href="" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <b>Inside Nutrabalance</b>
+                            </a>
+                            <ul class="dropdown-menu custom-dropdown-menu">
+                                <li><a class="dropdown-item custom-dropdown-item" href="/benifits"><b>Health Benefits</b></a></li>
+                                <li><a class="dropdown-item custom-dropdown-item" href="/ingredient"><b>Ingredients</b></a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown custom-nav-item custom-dropdown ">
+                            <a class="nav-link dropdown-toggle custom-nav-link custom-dropdown-toggle" href="" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <b>Reviews</b>
+                            </a>
+                            <ul class="dropdown-menu custom-dropdown-menu">
+                                <li><a class="dropdown-item custom-dropdown-item" href="/ereview"><b>Expert Reviews</b></a></li>
+                                <li><a class="dropdown-item custom-dropdown-item" href="/testimonial"><b>Testimonial</b></a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item ">
+                            <a href="/blog" class="nav-link"><b>Blog</b></a>
+                        </li>
+                        <li class="nav-item ">
+                            <a href="/contact" class="nav-link"><b>Contact Us</b></a>
+                        </li>
+                        <li class="nav-item ">
+                            <a href="/register" class="nav-link"><b>SignUp</b></a>
+                        </li>
+                        <li class="nav-item dropdown custom-nav-item custom-dropdown ">
+                            <a class="nav-link dropdown-toggle custom-nav-link custom-dropdown-toggle" href="" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <b>Login</b>
+                            </a>
+                            <ul class="dropdown-menu custom-dropdown-menu">
+                                <li><a class="dropdown-item custom-dropdown-item" href="/accounts/login"><b>Login</b></a></li>
+                                <li><a class="dropdown-item custom-dropdown-item" href="{%url 'logout'%}"><b>Logout</b></a></li>
+                            </ul>
+                        </li>
+                        
+                    </ul>
+                </div>
+                <div class="collapse navbar-collapse" id="menu">
+                    <div class="login ms-auto">
+                        <input type="text" placeholder="Search">
+                        <a href="/cart"><button><i class="bi bi-cart2 ms-1"></i></button></a>
+                        <button data-bs-target="#more" data-bs-toggle="offcanvas" ><i style="font-size: 20px;" class="bi bi-heart"></i></button>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!--offcanvas Starts Here-->
+    <div class="offcanvas offcanvas-end" id="more" data-bs-backdrop="static">
+        <div class="offcanvas-header">
+            <a href="/index" class="navbar-brand">
+                    <img src="{% static 'assets/logo.webp' %}" style="width: 60px;"  alt="">
+                    <h3 class="ms-2">NUTRABALANCE</h3>
+                </a>
+                <button class="btn-close" data-bs-dismiss="offcanvas"></button>
+        </div>
+        <div class="offcanvas-body">
+            <section class="container mt-5 mb-5">
+        <div class="vsection">
+            <div class="row">
+                    
+                
+                <div class="col-lg-12 text-center">
+                    <img src="{% static 'assets/p1.jpg' %}" class="w-100" alt="">
+                    <h5><span style="color: rgb(43, 118, 43);">Nutrabalance Vital-C</span></h5>
+                    <p>Vitamin C Antioxidant Supplement</p>
+                    <div class="rate mb-3">
+                        <button class="btn btn-success">4.0 <i class="bi bi-star-fill"></i></button>
+                        <p class="ms-2">250 Ratings</p>
+                    </div>
+                    <h4>₹699</h4>
+                    <p><span style="color: orangered;">MRP (Save ₹200 / 22% OFF)</span></p>
+                    <p><span style="font-size: 12px;">Price inclusive of all taxes</span></p>
+                    <p><span style="font-size: 15px;">Quntity</span></p>
+                    <div class="quntity mb-5">
+                        <button style="background-color: gray; color: white;">20</button>
+                        <button>40</button>
+                        <button>60</button>
+                        <button>80</button>
+                    </div>
+                    <a href="/cart"><button class="viewbutton"><i class="bi bi-cart2"></i> ADD TO CART</button></a>
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="container mt-5 mb-5">
+        <div class="vsection">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <img src="{% static 'assets/p4.jpg' %}" class="w-100" alt="">
+                    <h5><span style="color: rgb(43, 118, 43);">Nutrabalance ImmuneGuard</span></h5>
+                    <p>Immunity Booster</p>
+                    <div class="rate mb-3">
+                        <button class="btn btn-success">4.5 <i class="bi bi-star-fill"></i></button>
+                        <p class="ms-2">320 Ratings</p>
+                    </div>
+                    <h4>₹1,999</h4>
+                    <p><span style="color: orangered;">MRP (Save ₹300 / 20% OFF)</span></p>
+                    <p><span style="font-size: 12px;">Price inclusive of all taxes</span></p>
+                    <p><span style="font-size: 15px;">Quntity</span></p>
+                    <div class="quntity mb-5">
+                        <button style="background-color: gray; color: white;">1Kg</button>
+                        <button>3kg</button>
+                        <button>5kg</button>
+                        <button>10kg</button>
+                    </div>
+                    <a href="/cart"><button class="viewbutton"><i class="bi bi-cart2"></i> ADD TO CART</button></a>
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+        </div>
+    </div>
+
+    <!--offcanvas Ends Here-->
+    {%block body_block%}
+    <section class="container-fluid p-0 mb-5">
+        <div class="carousel slide" data-bs-ride="carousel" id="mainslide">
+            <div class="carousel-indicators">
+                    <button data-bs-target="#mainslide" data-bs-slide-to="0" class="active"></button>
+                    <button data-bs-target="#mainslide" data-bs-slide-to="1"></button>
+                    <button data-bs-target="#mainslide" data-bs-slide-to="2"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div  class="banner1">
+                        <div   class="content1">
+                            <p>Nature's Power</p>
+                            <div class="head1">
+                                <h2>Pure Nutrition from Nature's Goodness</h2>
+                                <h2>Blending the strength of fruits, herbs, and science to fuel your body naturally.</h2>
+                            </div>
+                            <a href="/products"><button class="btn btn-success"><b>Shop Now</b></button></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="banner2">
+                        <div class="content2">
+                            <p>Nutra Balance</p>
+                            <div class="head2">
+                                <h2>Natural ingredients crafted to fuel your body</h2>
+                                <h2>Premium Nutritional Powders for Energy, Wellness & Vitality</h2>
+                            </div>
+                            <a href="/products"><button class="btn btn-success"><b>Shop Now</b></button></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="banner3">
+                        <div class="content3">
+                            <p>Natural Wellness</p>
+                            <div class="head3">
+                                <h2>Clean Ingredients. Real Results.</h2>
+                                <h2>Fuel your body with nature's complete support system.</h2>
+                            </div>
+                            <a href="/products"><button class="btn btn-success"><b>Shop Now</b></button></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" data-bs-target="#mainslide" data-bs-slide="prev"><span class="carousel-control-prev-icon"></span></button>
+            <button class="carousel-control-next" data-bs-target="#mainslide" data-bs-slide="next"><span class="carousel-control-next-icon"></span></button>
+        </div>
+    </section>
+    <section class="container text-center mb-5">
+        <h1 class="mb-3">Welcome to <span style="color: rgb(43, 118, 43);">Nutrabalance</span></h1>
+        <p><b>Nutrabalance</b>, your trusted partner in natural wellness and daily nutrition. In a world filled with artificial 
+            supplements and quick fixes, we bring you something pure, powerful, and purposeful. Nutrabalance is a premium 
+            nutritional food supplement created to restore balance to your body — naturally.</p>
+    </section>
+    <section class="container mb-5">
+        <div class="section0 row">
+            <div class="col-lg-4 text-center">
+                <figure>
+                    <h1>💪</h1>
+                    <figcaption>
+                        <h3><span style="color: rgb(43, 118, 43);">Health</span></h3>
+                        <p>Premium quality supplements for your <br> wellness journey</p>
+                        <a href="/products"><button class="btn btn-success"><b>Shop Now</b></button></a>
+                    </figcaption>
+                </figure>
+            </div>
+            <div class="col-lg-4 text-center">
+                <figure>
+                    <h1>⚖️</h1>
+                    <figcaption>
+                        <h3><span style="color: rgb(43, 118, 43);">Balance</span></h3>
+                        <p>Scientifically formulated for optimal <br> nutrition</p>
+                        <a href="/products"><button class="btn btn-success"><b>Shop Now</b></button></a>
+                    </figcaption>
+                </figure>
+            </div>
+            <div class="col-lg-4 text-center">
+                <figure>
+                    <h1>✅</h1>
+                    <figcaption>
+                        <h3><span style="color: rgb(43, 118, 43);">Trustworthy</span></h3>
+                        <p>Tested and certified for your peace of <br> mind</p>
+                        <a href="/products"><button class="btn btn-success"><b>Shop Now</b></button></a>
+                    </figcaption>
+                </figure>
+            </div>
+        </div>
+    </section>
+    <section class="container mb-5">
+        <div class=" section1 row">
+            <div class="col-lg-5 mb-3">
+                    <img src="{% static 'assets/pic1.jpg' %}"  alt="">
+            </div>
+            <div class="col-lg-7">
+                <h2>Pure Nutrition Crafted from Nature’s Goodness</h2>
+                <p>Our unique formula combines plant-based nutrients, essential vitamins, and ancient herbal 
+                    extracts to give you sustained energy, sharper focus, and improved immunity. Each serving 
+                    is a perfect blend of modern nutrition science and traditional health wisdom, designed to 
+                    help you live your healthiest life every single day.</p>
+                <p>Our unique formula combines plant-based nutrients, essential vitamins, and ancient herbal 
+                    extracts to give you sustained energy, sharper focus, and improved immunity. Each serving 
+                    is a perfect blend of modern nutrition science and traditional health wisdom, designed to 
+                    help you live your healthiest life every single day.</p>
+                <button data-bs-target="#knowmore" data-bs-toggle="modal"><b>Know More</b></button>
+            </div>
+        </div>
+    </section>
+    <section class="section2 container-fluid mb-5">
+        <div class="container text-center">
+            <h2 class="mt-2">Our Core Belief</h2>
+            <p class="mt-3 mb-3">We believe that health should never be complicated. It should be balanced, natural, and easy to 
+                maintain. That’s why Nutrabalance exists — to help you achieve optimal wellness, the natural way.</p>
+            <button class="btn btn-success"><i class="bi bi-play-fill"></i> View Presentation</button>
+        </div> 
+    </section>
+    <section class="container mb-5">
+        <div class="section3">
+            <div class="row">
+                <div class="col-lg-5">
+                    <div class="mt-5">
+                        <h2 class="mb-3">Why Choose <span style="color: rgb(43, 118, 43);">Nutrabalance</span>?</h2>
+                        <p>100% Natural Ingredients – no chemicals or synthetic additives.</p>
+                        <p>Scientifically Tested – developed with nutritionists and health experts.</p>
+                        <p>Suitable for All Ages – safe, effective, and easy to digest.</p>
+                        <p>Delicious Taste – blends perfectly with milk, smoothies, or water.</p>
+                        <p>Sustainable and Eco-Friendly – we care for you and the planet.</p>
+                    </div>
+                </div>
+                <div class="col-lg-7 mt-3">
+                    <img src="{% static 'assets/pic4.png' %}"  alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="container mb-5">
+        <div class="questions">
+            <h2 class="mb-4"><span>Frequently Asked Questions</span></h2>
+            <details class="mb-3">
+                <summary>
+                    <span style="font-size: 20px;">What is Nutrabalance?</span>
+                </summary>
+                <p>Nutrabalance is a premium nutritional food supplement designed to support your overall health and daily nutrition. </p>
+                <p>It blends essential vitamins, minerals, proteins, and herbal ingredients to help maintain your body’s energy, strength, and immunity naturally.</p>
+            </details>
+            
+            <details class="mb-3">
+                <summary>
+                    <span style="font-size: 20px;">Is Nutrabalance safe for daily use?</span>
+                </summary>
+                <p>Yes, Nutrabalance is completely safe for everyday consumption.</p>
+                <p>It is made from natural ingredients and undergoes strict quality testing to ensure purity and safety. There are no harmful chemicals or artificial preservatives.</p>
+            </details>
+            <details class="mb-3">
+                <summary>
+                    <span style="font-size: 20px;">Can Nutrabalance replace a meal?</span>
+                </summary>
+                <p>No. Nutrabalance is made from natural plant-based ingredients and is free from artificial colors, gluten, or harmful additives. </p>
+                <p>There are no known side effects when used as directed.</p>
+            </details>
+            <details class="mb-3">
+                <summary>
+                    <span style="font-size: 20px;">How long before I see results?</span>
+                </summary>
+                <p>You can start feeling more energetic and active within 2–3 weeks of regular use.</p>
+                <p>Visible improvements in skin, stamina, and overall health appear with consistent daily intake.</p>
+            </details>
+        </div>
+    </section>
+    <section class=" section4 container-fluid ">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6 mb-3">
+                    <figure class="text-center">
+                        <i class="bi bi-people"></i>
+                        <figcaption>
+                            <h2>500+</h2>
+                            <p>Happy Clients</p>
+                        </figcaption>
+                    </figure>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-3">
+                    <figure class="text-center">
+                        <i class="bi bi-shop-window"></i>
+                            <figcaption>
+                            <h2>1000+</h2>
+                            <p>Products</p>
+                        </figcaption>
+                    </figure>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-3">
+                    <figure class="text-center">
+                        <i class="bi bi-trophy"></i>
+                        <figcaption>
+                            <h2>50+</h2>
+                            <p>Awards</p>
+                        </figcaption>
+                    </figure>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <figure class="text-center">
+                        <i class="bi bi-person-lines-fill"></i>
+                        <figcaption>
+                            <h2>500+</h2>
+                            <p>Team</p>
+                        </figcaption>
+                    </figure>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class=" text-light pt-5 pb-4">
+        <div class="container">
+            <div class="row">
+
+                <!-- Company Info -->
+                <div class="col-md-4 col-lg-4 col-sm-12 mb-4">
+                    <h5 class="text-uppercase fw-bold mb-3">NUTRABALANCE</h5>
+                    <p>
+                    Experience the power of scientifically-formulated supplements made with the finest 
+                    natural ingredients. Our commitment to excellence ensures that every product delivers 
+                    exceptional results, pure quality, and the nutrition your body deserves.
+                    </p>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="col-md-4 col-lg-3 col-sm-6 mb-4">
+                    <h6 class="text-uppercase fw-bold mb-3">Quick Links</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="/index" class="text-light text-decoration-none"><i class="bi bi-chevron-right"></i> Home</a></li>
+                        <li><a href="/about" class="text-light text-decoration-none"><i class="bi bi-chevron-right"></i> About </a></li>
+                        <li><a href="/products" class="text-light text-decoration-none"><i class="bi bi-chevron-right"></i> Products</a></li>
+                        <li><a href="/benifits" class="text-light text-decoration-none"><i class="bi bi-chevron-right"></i> Inside Nutrabalance</a></li>
+                        <li><a href="/ereview" class="text-light text-decoration-none"><i class="bi bi-chevron-right"></i> Reviews</a></li>
+                        <li><a href="/blog" class="text-light text-decoration-none"><i class="bi bi-chevron-right"></i> Blog</a></li>
+                        <li><a href="/contact" class="text-light text-decoration-none"><i class="bi bi-chevron-right"></i> Contact Us</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact -->
+                <div class="col-md-4 col-lg-5 col-sm-6 mb-4">
+                    <h6 class="text-uppercase fw-bold mb-3">Contact</h6>
+                    <p><i class="bi bi-geo-alt-fill me-2"></i>NutraBalance India Pvt. Ltd., Gurgaon, Haryana</p>
+                    <p><i class="bi bi-telephone-fill me-2"></i>+91 1800 102 2269</p>
+                    <p><i class="bi bi-envelope-fill me-2"></i>contact.india@nutrabalance.in</p>
+                </div>
+
+            </div>
+
+            <!-- Copyright -->
+            <div class="text-center border-top border-secondary pt-3 container">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <p class=" small">
+                            © 2025 NutraBalance India | Designed by <strong>Uma</strong> | Built with Bootstrap 5
+                        </p>
+                    </div>
+                
+                <!-- Social Icons -->
+                    <div class="col-lg-6">
+                        <div class="">
+                            <a href="#" class="text-light me-3"><i class="bi bi-facebook  "></i></a>
+                            <a href="#" class="text-light me-3"><i class="bi bi-instagram  "></i></a>
+                            <a href="#" class="text-light me-3"><i class="bi bi-twitter "></i></a>
+                            <a href="#" class="text-light"><i class="bi bi-youtube "></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <a href="#"><button class="upper btn btn-success"><b><i class="bi bi-arrow-up"></i></b></button></a>
+
+    <!--Modal Starts Here-->
+    <div class="modal fade" id="knowmore" data-bs-backdrop="static">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <a href="/index" class="navbar-brand">
+                    <img src="{% static 'main/assets/logo.webp' %}" style="width: 60px;"  alt="">
+                    <h3 class="ms-2">NUTRABALANCE</h3>
+                </a>
+                    <button class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <p><b>Nutrabalance</b> is a nutritional food supplement brand dedicated to promoting health and wellness through high-quality, science-backed ingredients. It is designed to support a balanced diet, providing essential vitamins, minerals, and protein for everyday nutrition.</p>
+                    <h5>Key Highlights:</h5>
+                    <ul>
+                        <li>Supports overall health and wellbeing</li>
+                        <li>Provides essential nutrients for daily nutrition</li>
+                        <li>Made with quality ingredients for maximum benefit</li>
+                        <li>Ideal for those seeking convenient and balanced supplementation</li>
+                    </ul>
+                    <a href="/products"><button style="width: 150px; height: 50px; border-radius: 50px; color: white; border: 0px; background-color: rgb(43, 118, 43);">Shop Now</button></a>
+                </div>
+                <div class="modal-footer">
+                    <button class=" btn btn-danger"  data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Modal Ends Here-->
+    {%endblock%}
+</body>
+</html>

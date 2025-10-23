@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+        <h1>Patients Data</h1>
+        <table border="1px">
+            <thead>
+                <th>Name</th>
+                <th>Description</th>
+                <th>Price</th>
+                <th>Offer price</th>
+                <th>Image</th>
+                <th>Category</th>
+            </thead>
+            {%for i in d%}
+            <tbody>
+                <tr>
+                    <td>{{i.name | title}}</td>
+                    <td>{{i.description}}</td>
+                    <td>{{i.price}}</td>
+                    <td>{{i.offer_price}}</td>
+                    <td>{{i.image}}</td>
+                    <td>{{i.category}}</td>
+                </tr>
+            </tbody>
+            {%endfor%}
+        </table>
+    </center>
+</body>
+</html>

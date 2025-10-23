@@ -1,0 +1,909 @@
+*{
+    box-sizing: border-box;
+    font-family: arial;
+}
+header{
+    background-color: white;
+    border-bottom: 1px solid gray;
+}
+
+header button{
+    border: 0px;
+    background-color: transparent;
+}
+.navbar-brand{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.navbar-brand h3{
+    font-weight: 700;
+}
+nav ul li{
+    border-radius:20px ;
+}
+
+nav ul li:hover{
+    background-color:rgb(43, 118, 43) ;
+    color: white;
+}
+.login input{
+    padding: 10px;
+    width: 120px;
+    height: 40px;
+    border: 1px solid rgb(43, 118, 43);
+    border-radius: 18px;
+}
+
+.login .bi{
+    cursor: pointer;
+    font-size: 20px;
+    color: rgb(43, 118, 43);
+}
+.banner1 {
+    background-image: 
+        linear-gradient(to bottom, rgba(0, 0, 0, 0.589), rgba(0, 0, 0, 0.447)),
+        url("../assets/banner1.avif");  /* fixed path */
+    background-position: top;
+}
+
+.banner2{
+    background-image:linear-gradient(to bottom, rgba(0, 0, 0, 0.589), rgba(0, 0, 0, 0.447)),url("../assets/banner2.jpg");  /* fixed path */
+    background-position: top;
+}
+.banner3{
+    background-image:linear-gradient(to bottom, rgba(0, 0, 0, 0.589), rgba(0, 0, 0, 0.447)), url("../assets/banner3.webp");  /* fixed path */
+    background-position: top;
+}
+.banner4{
+    background-image:linear-gradient(to bottom, rgba(0, 0, 0, 0.589), rgba(0, 0, 0, 0.447)), url("../assets/banner4.jpg");  /* fixed path */
+    background-position: top;
+    width: 100%;
+    height: 600px;
+    background-size: cover;
+    background-position:center;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+    color: white;
+    padding: 50px;
+    text-align: justify;
+}
+.banner5{
+    background-image:linear-gradient(to bottom, rgba(0, 0, 0, 0.589), rgba(0, 0, 0, 0.447)), url("../assets/banner5.webp");  /* fixed path */
+    background-position: top;
+    width: 100%;
+    height: 600px;
+    background-size: cover;
+    background-position:center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    padding: 50px;
+    text-align: justify;
+}
+
+.banner8{
+    background-image:linear-gradient(to bottom, rgba(0, 0, 0, 0.589), rgba(0, 0, 0, 0.447)), url("../assets/banner8.avif");  /* fixed path */
+    background-position: top;
+    width: 100%;
+    height: 600px;
+    background-size: cover;
+    background-position:center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    padding: 50px;
+    text-align: justify;
+}
+
+.banner9{
+    background-image:linear-gradient(to bottom, rgba(0, 0, 0, 0.589), rgba(0, 0, 0, 0.447)), url("../assets/banner9.webp");  /* fixed path */
+    background-position: top;
+    width: 100%;
+    height: 200px;
+    background-size: cover;
+    background-position:center;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    flex-direction: column;
+    color: white;
+    padding: 50px;
+}
+
+.banner10{
+    background-image:linear-gradient(to bottom, rgba(0, 0, 0, 0.589), rgba(0, 0, 0, 0.585)),url("../assets/banner10.webp");  /* fixed path */;
+    background-position: top;
+    width: 100%;
+    height: 200px;
+    background-size: cover;
+    background-position:center;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    flex-direction: column;
+    color: white;
+    padding: 50px;
+}
+
+.banner11{
+    background-image:linear-gradient(to bottom, rgba(0, 0, 0, 0.589), rgba(0, 0, 0, 0.447)), url("../assets/banner11.jpg");  /* fixed path */
+    background-position: top;
+    width: 100%;
+    height: 200px;
+    background-size: cover;
+    background-position:center;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+    color: white;
+    padding: 50px;
+}
+
+.banner12{
+    background-image:linear-gradient(to bottom, rgba(0, 0, 0, 0.589), rgba(0, 0, 0, 0.447)),  url("../assets/banner12.jpg");  /* fixed path */
+    background-position: top;
+    width: 100%;
+    height: 200px;
+    background-size: cover;
+    background-position:center;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+    color: white;
+    padding: 50px;
+}
+
+
+
+.banner1, .banner2, .banner3{
+    width: 100%;
+    height: 650px;
+    background-size: cover;
+    background-position:center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    padding: 50px;
+    text-align: justify;
+}
+.banner1 .content1 p{
+    animation-name: backInLeft;
+    animation-duration: 2s;
+    animation-direction: alternate;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+}
+.banner2 .content2 p{
+    animation-name: backInUp;
+    animation-duration: 2s;
+    animation-direction: alternate;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+}
+.banner3 .content3 p{
+    animation-name: backInDown;
+    animation-duration: 2s;
+    animation-direction: alternate;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+}
+.banner4 .content4 {
+    animation-name: backInLeft;
+    animation-duration: 2s;
+    animation-direction: alternate;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+}
+.banner5 .content5 {
+    animation-name: backInLeft;
+    animation-duration: 2s;
+    animation-direction: alternate;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+}
+
+.banner8 .content6 {
+    animation-name: backInLeft;
+    animation-duration: 2s;
+    animation-direction: alternate;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+}
+.banner1 .content1 button, .banner2 .content2 button, .banner3 .content3 button{
+    width: 150px;
+    height: 50px;
+    border-radius: 50px;
+    background-color: rgb(43, 118, 43);
+    color: white;
+    border: 0px;
+    margin-top: 25px;
+    animation-name: backInUp;
+    animation-duration: 2s;
+    animation-direction: alternate;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+}
+.banner1 .head1{
+    animation-name: backInRight;
+    animation-duration: 2s;
+    animation-direction: alternate;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+}
+.banner2 .head2{
+    animation-name: backInLeft;
+    animation-duration: 2s;
+    animation-direction: alternate;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+}
+.banner3 .head3{
+    animation-name: backInRight;
+    animation-duration: 2s;
+    animation-direction: alternate;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+}
+.banner1 .content1 h2, .banner2 .content2 h2, .banner3 .content3 h2, .banner4 .content4 h2, .banner5 .content5 h2, .banner8 .content6 h2{
+    font-size: 18px;
+    font-weight: 100;
+}
+
+.banner1 .content1 p, .banner2 .content2 p, .banner3 .content3 p, .banner4 .content4 p, .banner5 .content5 p , .banner8 .content6 p{
+    font-size: 80px;
+    font-family: myfont;
+}
+
+@font-face {
+    font-family: myfont;
+    src: url("../fonts/AbaloneSmile.otf");
+}
+
+
+
+.section0 figure{
+    cursor: pointer;
+    padding: 20px;
+    background-color: rgb(225, 234, 225);
+    border-radius: 10px;
+    transition-duration: 1s;
+    box-shadow: 1px 1px 10px rgb(43, 118, 43) ;
+}
+.section0 figure:hover{
+    box-shadow: 1px 1px 10px rgb(0, 0, 0) ;
+}
+
+.section0 figure:hover{
+    transform: scale(1);
+}
+.section0 button{
+    width: 150px;
+    height: 50px;
+    border-radius: 50px;
+    background-color: rgb(43, 118, 43);
+    color: white;
+    border: 0px;
+}
+.section1 img{
+    border-radius: 10px;
+    animation-name: fadeIn;
+    animation-duration: 1.5s;
+    animation-direction: alternate;
+    animation-iteration-count: 1s;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+}
+
+.section1 button{
+    width: 150px;
+    height: 50px;
+    border-radius: 50px;
+    background-color: rgb(43, 118, 43);
+    color: white;
+    border: 0px;
+    animation-name: fadeInUp;
+    animation-duration: 1s;
+    animation-direction: alternate;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+}
+.section1 img{
+    width: 100%;
+    transition-duration: 1s;
+}
+
+
+.section2{
+    color: white;
+    background-image:linear-gradient(to bottom, rgba(0, 0, 0, 0.811), rgba(0, 0, 0, 0.712)), url("../assets/pic2.jpg");  /* fixed path */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 50px;
+    text-align: justify;
+}
+.section2 h2{
+    font-family: myfont;
+    font-size: 50px;
+    animation-name: fadeInDown;
+    animation-duration: 1s;
+    animation-direction: alternate;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+}
+
+.section2 button{
+    width: 200px;
+    height: 50px;
+    border-radius: 50px;
+    background-color: rgb(43, 118, 43);
+    color: white;
+    border: 0px;
+    animation-name: fadeInUp;
+    animation-duration: 1s;
+    animation-direction: alternate;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+}
+
+.section2 figure i, .section2 figure i{
+    font-size: 40px;
+    padding: 10px;
+    margin: 0px;
+}
+
+.section2 figure  figcaption h2{
+    font-size: 35px;
+    padding: 10px;
+    margin: 0px;
+}
+
+.section2 figure  figcaption p, .section2 figure  figcaption p{
+    padding: 10px;
+    margin: 0px;
+}
+
+.section3 img{
+    height: 360px;
+    border-radius: 10px;
+    animation-name: fadeIn;
+    animation-duration: 1.5s;
+    animation-direction: alternate;
+    animation-iteration-count: 1s;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+}
+
+.section3 p::before{
+    content: " ✓ ";
+    color: rgb(43, 118, 43);
+    font-weight: 600;
+}
+
+.section3 img{
+    width: 100%;
+    transition-duration: 1s;
+}
+
+
+.questions details{
+    padding: 30px;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(43, 118, 43);
+    border-radius: 8px;
+    color: white;
+    transform-origin: 1s;
+}
+
+.questions details:hover{
+    background-color: rgb(72, 142, 72);
+}
+
+.section4{
+    color: white;
+    background-image:linear-gradient(to bottom, rgba(0, 0, 0, 0.811), rgba(0, 0, 0, 0.712)), url("../assets/pic2.jpg");  /* fixed path */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 50px;
+    text-align: justify;
+}
+.section4 figure i,  figure i{
+    font-size: 50px;
+    padding: 10px;
+    margin: 0px;
+}
+
+
+.section4 figure  figcaption h2{
+    font-size: 35px;
+    padding: 10px;
+    margin: 0px;
+}
+
+.section4 figure{
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 50%;
+    transition-duration: 1s;
+}
+
+.section4 figure:hover{
+    border-radius:8px ;
+    background-color: rgb(43, 118, 43);
+    color: white;
+}
+
+footer{
+    background-color: rgb(43, 118, 43);
+}
+
+.upper{
+    padding: 10px 5px;
+    background-color: rgb(43, 118, 43);
+    cursor: pointer;
+    width: 70px; 
+    font-size: 14px;
+    font-weight: 900;
+    color: #fff;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1;
+    border-radius: 5px;
+    border: 0px;
+}
+
+
+
+.asection1 img{
+    border-radius:10px ;
+    animation-name: fadeIn;
+    animation-duration: 1s;
+    animation-direction: alternate;
+    animation-iteration-count: 1s;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+
+}
+
+.asection2 {
+    width: 100%;
+    margin: auto;
+    height: 400px;
+    background-image: url("../assets/pic6.jpg");  /* fixed path */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 15px;
+}
+
+.asection2 .mission{
+    padding: 50px;
+}
+
+.asection3 {
+    width: 100%;
+    margin: auto;
+    height: 400px;
+    background-image: url("../assets/pic8.jpg");  /* fixed path */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 15px;
+}
+
+.asection3 .value{
+    padding: 50px 0px 30px 0px;
+    margin:20px;
+}
+
+.asection4 figure .bi{
+    color: rgb(43, 118, 43);
+}
+
+.asection4 figcaption{
+    text-align: start;
+}
+
+.asection4 .bi{
+    padding: 25px;
+    cursor: pointer;
+    width: 200px;
+    height: 200px;
+    background-color: transparent;
+    transition-duration: 2s;
+}
+
+.asection5{
+    border-top: 1px solid black;
+}
+.asection4:hover .bi{
+    border-radius: 100%;
+    background-color: rgb(43, 118, 43);
+    color: white;
+}
+
+.psection0 input{
+    width: 100%;
+    height: 50px;
+    border: 3px solid black;
+    border-radius: 5px;
+}
+.psection0 input:hover{
+    box-shadow: 1px 1px 2px  black;
+}
+.psection1 .card {
+    height: 100%;
+}
+.psection1 img{
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+.product {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.product h2 {
+    margin: 0;
+}
+.psection1 h6 {
+    width: 80px;
+    text-align: center;
+    padding: 5px;
+    background-color: rgb(106, 195, 106);
+    border: 0px;
+    border-radius: 25px;
+}
+.psection2 img, .psection3 img{
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+.psection2 figure{
+    cursor: pointer;
+    border: 1px solid gray;
+    border-radius: 5px;
+    transition-duration: 1s;
+}
+
+
+.psection2 figure:hover{
+    box-shadow: 1px 1px 10px rgb(43, 118, 43);
+}
+.psection1 .cardImg, .psection3 .cardImg{
+    height: 100%;
+    overflow: hidden;
+}
+.psection1 .card img, .psection3 .card img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition-duration: 1s;
+}
+
+.psection1 .card, .psection3 .card{
+    height: 100%;
+    cursor: pointer;
+    margin-bottom: 30px;
+    border: 1px solid gray;
+    transition-duration: 1s;
+}
+.psection1 .card:hover{
+    box-shadow: 1px 1px 10px rgb(43, 118, 43) ;
+}
+.psection3 .card:hover{
+    box-shadow: 1px 1px 10px rgb(43, 118, 43) ;
+}
+
+.psection1 .card button, .psection3 .card button{
+    width: 100px;
+    height: 45px;
+    padding: 10px;
+    border: 1px solid rgb(43, 118, 43);
+    border-radius: 25px;
+    background-color:rgb(43, 118, 43);
+    color: white;
+}
+
+
+.psection1 .card:hover img{
+    transform: scale(1.2);
+}
+
+.psection3 .card:hover img{
+    transform: scale(1.2);
+}
+
+.rate{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.quntity button{
+    border-radius: 50%;
+    border: 1px solid gray;
+}
+
+.viewbutton{
+    width: 250px;
+    height: 40px;
+    background-color: rgb(43, 118, 43);
+    color: white;
+    border: 1px solid gray;
+}
+.rating{
+    padding: 50px;
+    border-left: 1px solid gray;
+    border-right: 1px solid gray;
+}
+  
+  
+ 
+  
+progress::-moz-progress-bar {
+    background-color: rgb(43, 118, 43);
+}
+progress {
+    width: 90%;
+    height: 15px;
+    border-radius: 8px;
+}
+
+.bsection0 img, .bsection1 img{
+    border-radius: 8px;
+    animation-name: fadeIn;
+    animation-duration: 1s;
+    animation-direction: alternate;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+}
+.bsection0 button{
+    width: 150px;
+    height: 50px;
+    border-radius: 50px;
+    background-color: rgb(43, 118, 43);
+    color: white;
+    border: 0px;
+    animation-name: fadeInUp;
+    animation-duration: 1s;
+    animation-direction: alternate;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+}
+
+.bsection0 img{
+    width: 100%;
+    transition-duration: 1s;
+}
+
+.bsection1 img{
+    width: 100%;
+    transition-duration: 1s;
+}
+
+.bsection1 p::before{
+    content: " ✓ ";
+    color: rgb(43, 118, 43);
+    font-weight: 600;
+}
+.bsection2 h2{
+    font-family: myfont;
+    font-size: 50px;
+    animation-name: fadeInDown;
+    animation-duration: 1s;
+    animation-direction: alternate;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+}
+.bsection2{
+    color: white;
+    height: 250px;
+    background-image:linear-gradient(to bottom, rgba(0, 0, 0, 0.811), rgba(0, 0, 0, 0.712)), url("../assets/banner7.jpg");  /* fixed path */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 50px;
+    text-align: center;
+}
+
+.isection1 img{
+    border-radius: 8px;
+    animation-name: fadeIn;
+    animation-duration: 1s;
+    animation-direction: alternate;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+}
+
+.isection1 p::before{
+    content: " ✓ ";
+    color: rgb(43, 118, 43);
+    font-weight: 600;
+}
+
+.isection2{
+    width: 100%;
+    height: 300px;
+    pad: 50px;
+    border: 1px solid rgb(43, 118, 43);
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 1px 1px 10px rgb(43, 118, 43);
+}
+.isection2 button{
+    width: 150px;
+    height: 50px;
+    border-radius: 50px;
+    background-color: rgb(43, 118, 43);
+    color: white;
+    border: 0px;
+}
+
+.rsection1 img{
+    width: 100%;
+    border-radius: 100%;
+    transition-duration: 1s;
+}
+
+.rsection1:hover img{
+    border-radius: 10px;
+}
+
+.tsection1{
+    background-color: rgb(208, 211, 208);
+    border: 1px solid rgb(43, 118, 43);
+    border-radius: 8px;
+    box-shadow: 1px 1px 10px rgb(43, 118, 43);
+}
+.tsection1 img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+
+.tsection2 p::before{
+     content: " ✓ ";
+    color: rgb(43, 118, 43);
+    font-weight: 600;
+}
+
+.hsection .card{
+    height: 100%;
+    border: 0px;
+    background-color: rgb(43, 118, 43);
+    padding: 15px;
+    color: white;
+    border-radius: 8px;
+    box-shadow: 1px 1px 10px rgb(43, 118, 43);
+    height: 100%;
+    cursor: pointer;
+    border: 1px solid gray;
+    transition-duration: 1s;
+}
+.hsection .card p{
+    text-align: justify;
+}
+.hsection img{
+    width: 250px;
+    border-radius: 5px;
+    object-fit: cover;
+    transition-duration: 1s;
+}
+.hsection button{
+    width: 150px;
+    height: 50px;
+    border-radius: 50px;
+    color: black;
+    border: 1px solid gray;
+    background-color: white;
+}
+
+.hsection .cardImg{
+    overflow: hidden;
+}
+
+.hsection .card:hover{
+    box-shadow: 1px 1px 9px rgb(24, 24, 24) ;
+}
+
+.hsection .card:hover img{
+    transform: scale(1.2);
+}
+
+.cart1 select{
+    border: 0px;
+}
+
+.cart1 .items {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cart1 .part1{
+    border-right: 1px solid black;
+}
+.cart {
+    box-shadow: 1px 1px 10px rgb(177, 175, 175);
+}
+.cart2 .bi{
+    font-size: 25px;
+    padding: 10px;
+    border: 1px solid rgb(43, 118, 43);
+    border-radius: 100%;
+}
+
+.contact-info {
+      background: #fff;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+    }
+
+    .contact-info h4, .contact-form h4 {
+      font-weight: 600;
+      margin-bottom: 20px;
+      color: #222;
+    }
+
+    .contact-info p {
+      margin-bottom: 10px;
+      color: #555;
+    }
+
+    .contact-form {
+      background: #fff;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+    }
+
+    .btn-submit {
+      background-color: rgb(43, 118, 43);
+      border: none;
+      color: #fff;
+      font-weight: 600;
+      transition: 0.3s;
+    }
+
+    .btn-submit:hover {
+      background-color: rgb(113, 183, 113);
+    }
+
+
+    
