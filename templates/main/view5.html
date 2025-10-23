@@ -1,0 +1,236 @@
+{%extends 'main/index.html'%}
+{% load static %}
+{%block body_block%}
+    <section class="container mt-5 mb-5">
+        <div class="vsection">
+            <div class="row">
+                <div class="col-lg-6 mb-5">
+                    <img src="{% static 'assets/p5.jpg' %}" class="w-100" alt="">
+                </div>
+                <div class="col-lg-6 text-center">
+                    <h5><span style="color: rgb(43, 118, 43);">Nutrabalance SlimPro</span></h5>
+                    <p>Weight Management Supplement</p>
+                    <div class="rate mb-3">
+                        <button class="btn btn-success">4.5 <i class="bi bi-star-fill"></i></button>
+                        <p class="ms-2">320 Ratings</p>
+                    </div>
+                    <h4>₹999</h4>
+                    <p><span style="color: orangered;">MRP (Save ₹200 / 17% OFF)</span></p>
+                    <p><span style="font-size: 12px;">Price inclusive of all taxes</span></p>
+                    <p><span style="font-size: 15px;">Quntity</span></p>
+                    <div class="quntity mb-5">
+                        <button style="background-color: gray; color: white;">20</button>
+                        <button>40</button>
+                        <button>60</button>
+                        <button>80</button>
+                    </div>
+                    <a href="/cart"><button class="viewbutton"><i class="bi bi-cart2"></i> ADD TO CART</button></a>
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="container mb-5">
+        <div class="row">
+            <div class="col-lg-6">
+                <h6 class="text-start mt-3"><b><span style="color: rgb(56, 56, 107);">Product details</span></b></h6>
+                <p class="text-start">A scientifically balanced formula with green tea extract, L-carnitine, and fiber to support fat metabolism, control appetite, maintain healthy weight.</p>
+            </div>
+            <div class="rating col-lg-2">
+                <h4>4.2 <span style="color: rgb(43, 118, 43);"><i class="bi bi-star-fill"></i></span></h4>
+                <p style="font-size: 13px;">1.8K Customers</p>
+            </div>
+            <div class="col-lg-4">
+                <p>Rating Distribution</p>
+                <label for="progress" style="font-size: 15px;">5<i class="bi bi-star-fill"></i> </label>
+                <progress id="progress" value="47" max="100" style="width: 90%;">70%</progress>
+                <label for="progress" style="font-size: 15px;">4<i class="bi bi-star-fill"></i> </label>
+                <progress id="progress" value="39" max="100" style="width: 90%;">70%</progress>
+                <label for="progress" style="font-size: 15px;">3<i class="bi bi-star-fill"></i> </label>
+                <progress id="progress" value="26" max="100" style="width: 90%;">70%</progress>
+                <label for="progress" style="font-size: 15px;">2<i class="bi bi-star-fill"></i> </label>
+                <progress id="progress" value="16" max="100" style="width: 90%;">70%</progress>
+                <label for="progress" style="font-size: 15px;">1<i class="bi bi-star-fill"></i> </label>
+                <progress id="progress" value="9" max="100" style="width: 90%;">70%</progress>
+            </div>
+        </div>
+    </section>
+    <section class="container mb-5">
+        <h3 class="text-center">
+            Shop by Category
+        </h3>
+        <div class="psection2">
+            <div class="row">
+                <div class="col-lg-3 col-md-6">
+                    <figure class="mt-3">
+                        <img src="{% static 'assets/p1.jpg' %}" class="w-100" alt="">
+                        <figcaption class="mt-3 text-center">
+                            <h5>Daily Vitamins</h5>
+                        </figcaption>
+                    </figure>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <figure class="mt-3">
+                        <img src="{% static 'assets/p4.jpg' %}" class="w-100" alt="">
+                        <figcaption class="mt-3 text-center">
+                            <h5>Protein Powder</h5>
+                        </figcaption>
+                    </figure>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <figure class="mt-3">
+                        <img src="{% static 'assets/p8.jpg' %}" class="w-100" alt="">
+                        <figcaption class="mt-3 text-center">
+                            <h5>Kids & Family Nutrition</h5>
+                        </figcaption>
+                    </figure>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <figure class="mt-3">
+                        <img src="{% static 'assets/p11.jpg' %}" class="w-100" alt="">
+                        <figcaption class="mt-3 text-center">
+                            <h5>Weight Management & Beauty</h5>
+                        </figcaption>
+                    </figure>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="container mb-5">
+        <h3 class="text-center mb-3">Similar Products</h3>
+        <div class="psection3">
+            <div class="row">
+                <div class="col-md-6 col-lg-3 mb-5">
+                    <div class="card">
+                        <div class="cardImg">
+                            <img src="{% static 'assets/p12.jpg' %}" class="w-100" alt="">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title"><b>Nutrabalance PowerMass</b></h5>
+                            <h5>Mass Gainer Supplement</h5>
+                            <p>High-calorie nutrition blend designed for muscle growth and healthy weight gain. Enriched with proteins, complex carbs, and essential amino acids.</p>
+                            <h6>Vitamins</h6>
+                            <div class="product">
+                                <h5 class="text-start">₹699 (22% OFF)</h5>
+                                <a href="/view12"><button class="btn btn-success">Buy</button></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 mb-5">
+                    <div class="card">
+                        <div class="cardImg">
+                            <img src="{% static 'assets/p4.jpg' %}" class="w-100" alt="">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title"><b>Nutrabalance ImmuneGuard</b></h5>
+                            <h5>Immunity Booster</h5>
+                            <p>Enriched with Vitamin C, Zinc, and herbal antioxidants like Tulsi & Amla, ImmuneGuard strengthens your body’s natural helps infections.</p>
+                            <h6>Protein</h6>
+                            <div class="product">
+                                <h5 class="text-start">₹999 (23% OFF)</h5>
+                                <a href="/view4"><button class="btn btn-success">Buy</button></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 mb-5">
+                    <div class="card">
+                        <div class="cardImg">
+                            <img src="{% static 'assets/p9.jpg' %}" class="w-100" alt="">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title"><b>Nutrabalance DetoxFit</b></h5>
+                            <h5>Detox & Digestion Support</h5>
+                            <p>Helps cleanse your body and support a healthy digestive system. Formulated with,green superfoods, herbal  refreshed & lighter feeling.</p>
+                            <h6>Vitamins</h6>
+                            <div class="product">
+                                <h5 class="text-start">₹699 (22% OFF)</h5>
+                                <a href="/view9"><button class="btn btn-success">Buy</button></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 mb-5">
+                    <div class="card">
+                        <div class="cardImg">
+                            <img src="{% static 'assets/p6.jpg' %}" class="w-100" alt="">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title"><b>Nutrabalance Kids Care</b></h5>
+                            <h5>Kids Nutrition Formula</h5>
+                            <p>A delicious and nutritious drink mix that supports growth, immunity,brain development in children. essential vitamins, minerals,DHA.</p>
+                            <h6>Protein</h6>
+                            <div class="product">
+                                <h5 class="text-start">₹1,849 (20% OFF)</h5>
+                                <a href="/view6"><button class="btn btn-success">Buy</button></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <footer class=" text-light pt-5 pb-4">
+        <div class="container">
+            <div class="row">
+
+                <!-- Company Info -->
+                <div class="col-md-4 col-lg-4 col-sm-12 mb-4">
+                    <h5 class="text-uppercase fw-bold mb-3">NUTRABALANCE</h5>
+                    <p>
+                    Experience the power of scientifically-formulated supplements made with the finest 
+                    natural ingredients. Our commitment to excellence ensures that every product delivers 
+                    exceptional results, pure quality, and the nutrition your body deserves.
+                    </p>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="col-md-4 col-lg-3 col-sm-6 mb-4">
+                    <h6 class="text-uppercase fw-bold mb-3">Quick Links</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="/index" class="text-light text-decoration-none"><i class="bi bi-chevron-right"></i> Home</a></li>
+                        <li><a href="/about" class="text-light text-decoration-none"><i class="bi bi-chevron-right"></i> About </a></li>
+                        <li><a href="/products" class="text-light text-decoration-none"><i class="bi bi-chevron-right"></i> Products</a></li>
+                        <li><a href="/benifits" class="text-light text-decoration-none"><i class="bi bi-chevron-right"></i> Inside Nutrabalance</a></li>
+                        <li><a href="/ereview" class="text-light text-decoration-none"><i class="bi bi-chevron-right"></i> Reviews</a></li>
+                        <li><a href="/blog" class="text-light text-decoration-none"><i class="bi bi-chevron-right"></i> Blog</a></li>
+                        <li><a href="/contact" class="text-light text-decoration-none"><i class="bi bi-chevron-right"></i> Contact Us</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact -->
+                <div class="col-md-4 col-lg-5 col-sm-6 mb-4">
+                    <h6 class="text-uppercase fw-bold mb-3">Contact</h6>
+                    <p><i class="bi bi-geo-alt-fill me-2"></i>NutraBalance India Pvt. Ltd., Gurgaon, Haryana</p>
+                    <p><i class="bi bi-telephone-fill me-2"></i>+91 1800 102 2269</p>
+                    <p><i class="bi bi-envelope-fill me-2"></i>contact.india@nutrabalance.in</p>
+                </div>
+
+            </div>
+
+            <!-- Copyright -->
+            <div class="text-center border-top border-secondary pt-3 container">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <p class=" small">
+                            © 2025 NutraBalance India | Designed by <strong>Uma</strong> | Built with Bootstrap 5
+                        </p>
+                    </div>
+                
+                <!-- Social Icons -->
+                    <div class="col-lg-6">
+                        <div class="">
+                            <a href="#" class="text-light me-3"><i class="bi bi-facebook  "></i></a>
+                            <a href="#" class="text-light me-3"><i class="bi bi-instagram  "></i></a>
+                            <a href="#" class="text-light me-3"><i class="bi bi-twitter "></i></a>
+                            <a href="#" class="text-light"><i class="bi bi-youtube "></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <a href="#"><button class="upper btn btn-success"><b><i class="bi bi-arrow-up"></i></b></button></a>
+{%endblock%}
