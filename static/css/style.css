@@ -26,6 +26,7 @@ nav ul li{
 nav ul li:hover{
     background-color:rgb(43, 118, 43) ;
     color: white;
+    padding: 2px;
 }
 .login input{
     padding: 10px;
